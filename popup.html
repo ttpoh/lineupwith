@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>공연 소식</title>
+    <script language="JavaScript">
+        function setCookie(name, value, expiredays) {
+            var date = new Date();
+            date.setDate(date.getDate() + expiredays);
+            document.cookie = escape(name) + "=" + escape(value) + "; expires=" + date.toUTCString();
+        }
+
+        function closePopup() {
+            if (document.getElementById("check").value) {
+                
+                setCookie("popupYN", "N", 1);
+                self.close();
+            }
+        }
+    </script>
+</head>
+<body>
+
+        <p style="text-align:left; font-size: medium ; color: darkorange"><b>[이달의 공연]</b></p>
+        <p style="text-align:center; font-size: 30PX ; color: darkred"><b><   공연 소식    ></b></p>
+
+<img src="./board2/img/concert.png" style= "width:100%; margin-top:0px"/>
+<br>
+
+<input type="button" id="check" value="24시간동안 보지 않기" float="right" onclick="closePopup();">
+
+<!-- <button id="check" style="float: right;" onclick="closePopup();"></button> -->
+
+
+</body>
+</html>
