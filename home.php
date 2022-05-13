@@ -11,7 +11,7 @@ $my_id = isset($_SESSION["my_id"])? $_SESSION["my_id"]:"";
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1. 0">
 
-    <link rel="stylesheet" type="text/css" href="style.css?d">
+    <link rel="stylesheet" type="text/css" href="style.css?a">
             
     <title>main</title>
     <script type="text/javascript">
